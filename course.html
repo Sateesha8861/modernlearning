@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses | Modern Learning Platform</title>
+
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <div class="logo">Modern Learning</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="course.html" class="active">Courses</a>
+            <a href="learning-path.html">Learning Path</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="section courses-section">
+    <div class="container">
+        <h1 class="section-title">Explore Our Courses</h1>
+        <p style="text-align:center; color:#555;">
+            Choose a learning path and explore industry-relevant skills
+        </p>
+    </div>
+</section>
+
+<section class="section courses-section">
+    <div class="container">
+        <h2 class="section-title">Popular Courses</h2>
+
+        <div class="course-grid">
+            <a href="course-html-css.html" class="course-card">
+                <h3>HTML & CSS</h3>
+                <p>Build modern and responsive websites</p>
+            </a>
+
+            <a href="course-java-fullstack.html" class="course-card">
+                <h3>Java Full Stack</h3>
+                <p>Frontend, backend, and database development</p>
+            </a>
+
+            <a href="course-python.html" class="course-card">
+                <h3>Python</h3>
+                <p>Programming for beginners and professionals</p>
+            </a>
+
+            <a href="course-ai.html" class="course-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Foundations of AI and modern applications</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section courses-section">
+    <div class="container">
+        <h2 class="section-title">Frontend Development</h2>
+
+        <div class="course-grid">
+            <a href="course-html-css.html" class="course-card">
+                <h3>HTML & CSS</h3>
+                <p>Structure and style modern web pages</p>
+            </a>
+
+            <a href="course-javascript.html" class="course-card">
+                <h3>JavaScript</h3>
+                <p>Add interactivity to websites</p>
+            </a>
+
+            <a href="course-react.html" class="course-card">
+                <h3>React</h3>
+                <p>Build scalable frontend applications</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section courses-section">
+    <div class="container">
+        <h2 class="section-title">Backend Development</h2>
+
+        <div class="course-grid">
+            <a href="course-java.html" class="course-card">
+                <h3>Java</h3>
+                <p>Backend programming with Java</p>
+            </a>
+
+            <a href="course-python.html" class="course-card">
+                <h3>Python</h3>
+                <p>Server-side development and scripting</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section courses-section">
+    <div class="container">
+        <h2 class="section-title">Database Technologies</h2>
+
+        <div class="course-grid">
+            <a href="course-mysql.html" class="course-card">
+                <h3>MySQL</h3>
+                <p>Relational database management</p>
+            </a>
+
+            <a href="course-mongodb.html" class="course-card">
+                <h3>MongoDB</h3>
+                <p>NoSQL database for modern apps</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section courses-section">
+    <div class="container">
+        <h2 class="section-title">AI & Emerging Technologies</h2>
+
+        <div class="course-grid">
+            <a href="course-ai.html" class="course-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Introduction to AI concepts and use cases</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Modern Learning Platform</p>
+    </div>
+</footer>
+
+<div class="chatbot" onclick="toggleChat()">💬</div>
+
+<div class="chatbot-panel" id="chatbotPanel" onclick="event.stopPropagation()">
+    <h3>Quick Help</h3>
+
+    <div class="chat-q" onclick="loadSubQuestions('enroll')">
+         How do I enroll?
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('certificate')">
+         Certificate details
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('videos')">
+         Course videos
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('beginner')">
+         Beginner friendly?
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('contact')">
+         Contact support
+    </div>
+
+    <div class="chat-answer" id="chatAnswer">
+        Click a question to continue.
+    </div>
+</div>
+
+<script src="chatbot.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Learning Platform</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <div class="logo">Modern Learning</div>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="learning-path.html">Learning Path</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Learn Skills That Shape Your Future</h1>
+        <p>Curated courses in frontend, backend, databases, and AI</p>
+        <a href="course.html" class="btn-primary">Explore Courses</a>
+    </div>
+</section>
+
+<section class="section courses-section">
+    <div class="container">
+        <h2 class="section-title">Popular Courses</h2>
+
+        <div class="course-grid">
+            <a href="course-html-css.html" class="course-card">
+                <h3>HTML & CSS</h3>
+                <p>Build modern and responsive websites</p>
+            </a>
+
+            <a href="course-java.html" class="course-card">
+                <h3>Java Full Stack</h3>
+                <p>End-to-end web development</p>
+            </a>
+
+            <a href="course-python.html" class="course-card">
+                <h3>Python</h3>
+                <p>Versatile programming for all domains</p>
+            </a>
+
+            <a href="course-ai.html" class="course-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Foundations of AI and real-world use</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Modern Learning Platform</p>
+    </div>
+</footer>
+
+
+<div class="chatbot" onclick="toggleChat()">💬</div>
+
+<div class="chatbot-panel" id="chatbotPanel" onclick="event.stopPropagation()">
+    <h3>Quick Help</h3>
+
+    <div class="chat-q" onclick="loadSubQuestions('enroll')">
+         How do I enroll?
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('certificate')">
+         Certificate details
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('videos')">
+         Course videos
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('beginner')">
+         Beginner friendly?
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('contact')">
+         Contact support
+    </div>
+
+    <div class="chat-answer" id="chatAnswer">
+        Click a question to continue.
+    </div>
+</div>
+
+<script src="chatbot.js"></script>
+</body>
+</html>

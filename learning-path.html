@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Path | Modern Learning Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <div class="logo">Modern Learning</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="learning-path.html" class="active">Learning Path</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="course-hero">
+    <div class="container">
+        <h1>Learning Paths</h1>
+        <p>Follow a structured roadmap to become job-ready</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container course-layout">
+
+        <div class="course-main">
+
+            <div class="course-card">
+                <h2>Frontend Developer Path</h2>
+                <ol>
+                    <li>HTML & CSS Fundamentals</li>
+                    <li>JavaScript Basics</li>
+                    <li>Advanced JavaScript</li>
+                    <li>React Fundamentals</li>
+                    <li>Build Portfolio Projects</li>
+                </ol>
+            </div>
+
+            <div class="course-card">
+                <h2>Backend Developer Path</h2>
+                <ol>
+                    <li>Java / Python Basics</li>
+                    <li>Object Oriented Programming</li>
+                    <li>REST APIs</li>
+                    <li>Database Integration</li>
+                    <li>Backend Project</li>
+                </ol>
+            </div>
+
+            <div class="course-card">
+                <h2>Database Engineer Path</h2>
+                <ol>
+                    <li>SQL Fundamentals</li>
+                    <li>MySQL Database Design</li>
+                    <li>MongoDB & NoSQL</li>
+                    <li>Performance Optimization</li>
+                </ol>
+            </div>
+
+            <div class="course-card">
+                <h2>AI & Emerging Tech Path</h2>
+                <ol>
+                    <li>AI Fundamentals</li>
+                    <li>Machine Learning Basics</li>
+                    <li>Real-world AI Use Cases</li>
+                    <li>AI Mini Projects</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <aside class="course-sidebar">
+            <div class="sidebar-card">
+                <h3>Why Learning Paths?</h3>
+                <p>✔ Structured growth</p>
+                <p>✔ Beginner friendly</p>
+                <p>✔ Industry aligned</p>
+            </div>
+        </aside>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Modern Learning Platform</p>
+    </div>
+</footer>
+
+
+<div class="chatbot" onclick="toggleChat()">💬</div>
+
+<div class="chatbot-panel" id="chatbotPanel" onclick="event.stopPropagation()">
+    <h3>Quick Help</h3>
+
+    <div class="chat-q" onclick="loadSubQuestions('enroll')">
+         How do I enroll?
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('certificate')">
+         Certificate details
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('videos')">
+         Course videos
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('beginner')">
+         Beginner friendly?
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('contact')">
+         Contact support
+    </div>
+
+    <div class="chat-answer" id="chatAnswer">
+        Click a question to continue.
+    </div>
+</div>
+
+<script src="chatbot.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Modern Learning Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container">
+        <div class="logo">Modern Learning</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="learning-path.html">Learning Path</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="course-hero">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container course-layout">
+
+        <div class="course-main">
+
+            <div class="course-card">
+                <h2>Get in Touch</h2>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <br><br>
+                    <input type="email" placeholder="Your Email" required>
+                    <br><br>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="btn-primary">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <aside class="course-sidebar">
+            <div class="sidebar-card">
+                <h3>Contact Info</h3>
+                <p><strong>Email:</strong> support@modernlearning.com</p>
+                <p><strong>Phone:</strong> +91 90000 00000</p>
+                <p><strong>Mode:</strong> Online Support</p>
+            </div>
+        </aside>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 Modern Learning Platform</p>
+    </div>
+</footer>
+
+
+<div class="chatbot" onclick="toggleChat()">💬</div>
+
+<div class="chatbot-panel" id="chatbotPanel" onclick="event.stopPropagation()">
+    <h3>Quick Help</h3>
+
+    <div class="chat-q" onclick="loadSubQuestions('enroll')">
+         How do I enroll?
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('certificate')">
+         Certificate details
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('videos')">
+         Course videos
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('beginner')">
+         Beginner friendly?
+    </div>
+
+    <div class="chat-q" onclick="loadSubQuestions('contact')">
+         Contact support
+    </div>
+
+    <div class="chat-answer" id="chatAnswer">
+        Click a question to continue.
+    </div>
+</div>
+
+<script src="chatbot.js"></script>
+
+</body>
+</html>
